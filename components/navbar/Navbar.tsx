@@ -6,6 +6,8 @@ import DarkMode from "./DarkMode";
 import Logo from "./Logo";
 import { Button } from "../ui/button";
 import NavSearch from "./NavSearch";
+import UserIcon from "./UserIcon";
+import UserDropdown from "./UserDropdown";
 
 function Navbar() {
   return (
@@ -17,13 +19,9 @@ function Navbar() {
           <Button variant="ghost">Discover</Button>
         </div>
         <NavSearch />
-        <div className="flex gap-4 items-center">
+        <div className="flex gap-4 items-center px-4">
           <DarkMode />
-          <img
-            src="https://orientarium.lodz.pl/assets/2022/02/kotek-rudy-591x601.jpg"
-            alt="User Avatar"
-            className="rounded-full object-cover w-8 h-8 mr-2"
-          />
+          <UserDropdown />
         </div>
       </Container>
     </nav>

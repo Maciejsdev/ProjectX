@@ -94,3 +94,10 @@
 ::-webkit-scrollbar-thumb:hover {
   background: hsl(var(--primary)); /* Użycie zmiennej CSS */
 }
+.no-scrollbar::-webkit-scrollbar {
+  display: none;
+}
+.no-scrollbar {
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+}
